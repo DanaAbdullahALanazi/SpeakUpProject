@@ -452,7 +452,7 @@ form .submitButton input:hover{
   color: black;
 }
 
-
+/*Dana's work starts here!*/
 .container{
   max-width: 1000px;
   width: 100%;
@@ -666,6 +666,71 @@ transition: all 0.5s ease;
   display: none;
 }
 
+/*insert the modifications below!*/
+/* Add green right-directed arrow */
+.button-right {
+  position: fixed;
+  top: 50%;
+  right: 70px; /* Adjust the distance from the right side */
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.button-right label {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button-right label::before {
+  content: '';
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(-45deg);
+}
+
+.button-left {
+  position: fixed;
+  top: 50%;
+  left: 70px; /* Adjust the distance from the left side */
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.button-left label {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button-left label::before {
+  content: '';
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(135deg);
+}
+
+.required {
+  color: red;
+  margin-left: 5px;
+  font-size: 30px;
+}
+
+/*Dana's work ends here!*/
 .home{
   width: 100%;
   height: 100vh;

@@ -28,22 +28,27 @@
       <form action="#">
          <div class="booking-details">
             <div class="input-box">
-               <span class="labels">How would you represent your current level?</span>
+               <label class="labels">How would you represent your current level? <span class="required">*</span></label> 
               <div class="level-details">
-              <input type="range" class="levelRange" required>
+               <select style="color:rgb(9, 79, 9); font-size: 20px;">
+                  <option value="gettingStarted" selected>I'm just getting started</option>
+                  <option value="basics">I know the basics</option>
+                  <option value="conversational">I'm conversational</option>
+                  <option value="fluent">I'm fluent in most situations</option>
+                </select>
              </div>
             </div>
             <div class="input-box">
-               <label class="labels">When do you wish to start your session?</label>
+               <label class="labels">When do you wish to start your session? <span class="required">*</span></label>
                <input type="datetime-local" class="calander" required>
             </div>
             <div class="input-box">
-             <label class="labels">select the desired session duration:
+             <label class="labels">select the desired session duration: <span class="required">*</span>
                <div class="duration-details">
-                 <input type="radio" name="time" id="dot-1">
-                 <input type="radio" name="time" id="dot-2">
-                 <input type="radio" name="time" id="dot-3">
-                 <input type="radio" name="time" id="dot-4">
+                 <input type="radio" name="time" id="dot-1" required>
+                 <input type="radio" name="time" id="dot-2" required>
+                 <input type="radio" name="time" id="dot-3" required>
+                 <input type="radio" name="time" id="dot-4" required>
                <div class="time-catagory">
                   <label for="dot-1">
                   <span class="dot one"></span>
